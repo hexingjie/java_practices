@@ -95,22 +95,7 @@ class IP_Card extends Number_PhoneCard
 	}
 }
 
-//200卡从有卡号电话卡继承
-class D200_Card extends Number_PhoneCard
-{
-	double additoryFee;
-	
-	boolean performDial()
-	{
-		if (balance > (0.5 + additoryFee)) 
-		{
-			balance -= (0.5 + additoryFee);
-			return true;
-		} else {
-			return false;
-		}
-	}
-}
+//200卡从
 
 public class test_exends {
 
